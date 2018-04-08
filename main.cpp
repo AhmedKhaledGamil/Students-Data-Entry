@@ -1451,8 +1451,8 @@ void inputCourseExams(CoursesManager &courses_manager)
     string course;
     string course_data[4];
     int data_index;
-    //getline(cin, course_exams);
-    course_exams = "CoursesExams=[HUM001,Technical Writing,28/4/2016,HallA;CSE121,Computer Programming,3/5/2016,HallA;PHM110,Math 3,5/5/2016,HallC;PHM103,Physics,5/5/2016,HallA;EPM120,Electrical Circuits,6/5/2016,HallD;ECE132,Electronics,7/5/2016,HallB;CSE432,Computer Security,28/4/2016,HallA";
+    getline(cin, course_exams);
+    //course_exams = "CoursesExams=[HUM001,Technical Writing,28/4/2016,HallA;CSE121,Computer Programming,3/5/2016,HallA;PHM110,Math 3,5/5/2016,HallC;PHM103,Physics,5/5/2016,HallA;EPM120,Electrical Circuits,6/5/2016,HallD;ECE132,Electronics,7/5/2016,HallB;CSE432,Computer Security,28/4/2016,HallA";
     course_exams = course_exams.substr(course_exams.find('[') + 1, course_exams.find(']') - course_exams.find('[') - 1);
     istringstream ss1(course_exams);
     while (getline(ss1, course, ';'))
@@ -1470,8 +1470,8 @@ void inputStudents(StudentsManager &students_manager)
     string student;
     string student_data[3];
     int data_index;
-    //getline(cin, students);
-    students = "Students=[12001,Ahmed Hassan, (CSE121,HUM001,PHM110);12002,Aly Hamed,(CSE121,PHM110,PHM103);12003,Ayman Ali,(PHM110,EPM120,ECE132);12006,Hazem Elshenawy,(PHM103,ECE132);12007,Ahmed Gabr,(CSE432)";
+    getline(cin, students);
+    //students = "Students=[12001,Ahmed Hassan, (CSE121,HUM001,PHM110);12002,Aly Hamed,(CSE121,PHM110,PHM103);12003,Ayman Ali,(PHM110,EPM120,ECE132);12006,Hazem Elshenawy,(PHM103,ECE132);12007,Ahmed Gabr,(CSE432)";
     students = students.substr(students.find('[') + 1, students.find(']') - students.find('[') - 1);
     istringstream ss1(students);
     while (getline(ss1, student, ';'))
