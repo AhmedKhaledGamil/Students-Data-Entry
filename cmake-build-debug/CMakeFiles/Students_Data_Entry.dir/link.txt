@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/Students_Data_Entry.dir/main.cpp.o  -o Students_Data_Entry.exe -Wl,--out-implib,libStudents_Data_Entry.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
